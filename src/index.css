@@ -1,0 +1,336 @@
+.main {
+  background-color: rgb(243, 233, 233);
+  height: 100%;
+  width: fit-content;
+  font-family: "Calibri";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  /* position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #555; */
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login input {
+  height: 20px;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+}
+
+.book-card {
+  width: 15%;
+  height: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.book-details {
+  margin: 0;
+}
+
+.book-details p {
+  font-family: calibri;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #61b8ff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: monospace;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+  border-radius: 8px;
+}
+
+/* LoginForm.css */
+
+.login-form {
+  width: fit-content;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="username"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* AddBookForm.css */
+.add-book-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  height: 30px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Optional small adjustments for better appearance */
+button:focus {
+  outline: none;
+}
+
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content {
+  margin-top: 20px;
+}
+
+.delete {
+  background-color: red;
+  border: 1px solid grey;
+  color: white;
+}
+
+.delete:hover {
+  background-color: rgb(197, 67, 67);
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  color: darkgray;
+  font-family: Garamond;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 6rem;
+  color: #ff6f61;
+}
+
+.container p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff6f61;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.container a:hover {
+  background-color: #ff3d30;
+}
+
+.search {
+  margin: 10px;
+  align-items: center;
+}
